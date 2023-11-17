@@ -11,7 +11,7 @@ import image from "$lib/assets/scindapsus.jpg";
             </h1>
 		</div>
 		<div class="image-container">
-            <img src= {image}  alt="stekje image" loading="lazy" />
+                <img src={image} alt="stekje image" loading="lazy" max-width="00" />            
 		</div>
 	</div>
 
@@ -22,70 +22,64 @@ import image from "$lib/assets/scindapsus.jpg";
 </div>
 
 <style>
-	.beschrijving {
-		padding: 20px;
-	}
-	.beschrijving h2 {
-		color: var(--color-primair);
-		margin-bottom: 10px;
-		text-transform: uppercase;
-	}
-	.content-container,
-	.titel {
-		display: flex;
-	}
-    
-	/* HIER KOMT DE MEDIA QUERY'Z */
 
-	@media screen and (min-width: 525px) {
-		.content-container,
-		.titel {
-			display: block;
-		}
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+}
 
-		.image-container {
-			display: block;
-		}
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
-		/* met deze code maak ik de image Naast de beschrijving text */
-		.container {
-			display: flex;
-			border-radius: 10px;
-			overflow: hidden; /* Zorgt ervoor dat de afbeelding binnen de container blijft */
-			padding: 10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			margin-top: 4rem;
-		}
+.titel {
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
 
-		.image-container img {
-			width: 300px;
-			height: auto;
-			border-radius: 10px;
-		}
+.beschrijving {
+    padding: 20px;
+}
 
-		.content-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
+.beschrijving h2 {
+    color: var(--color-primair);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 
-		.titel {
-			font-size: large;
-			padding: 10px;
-			text-align: center;
-			width: 100%;
-		}
+/* Media Query voor schermen groter dan 768px */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
 
-		.beschrijving {
-			display: flex;
-			flex-direction: column;
-			margin: 28px; /* dit kan op een andere MANIERRR */
-			max-width: 35rem;
-		}
-	}
-	@media screen and (min-width: 525px) {
-		.container {
-			margin-top: none;
-		}
-	}
+    .image-container {
+        margin-right: 20px;
+    }
+}
+
+/* Media Query voor schermen groter dan 1024px */
+@media screen and (min-width: 1024px) {
+    .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+    .image-container {
+        width: 300px;
+    }
+    .beschrijving {
+        max-width: 35rem;
+    }
+}
 </style>
