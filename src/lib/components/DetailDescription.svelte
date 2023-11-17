@@ -1,13 +1,17 @@
+<script>
 
+import image from "$lib/assets/scindapsus.jpg";
 
-<div class="content-container">
-	<div class="container2">
-		<div class="title2">
+</script>
+
+<div class="container">
+	<div class="content-container">
+		<div class="titel">
 			<h1>Tradescantia zebrina ‘Vaderplant’
             </h1>
 		</div>
 		<div class="image-container">
-            <img src="./assets/scindapsus.jpg" alt="stekje image" loading="lazy"/>
+            <img src= {image}  alt="stekje image" loading="lazy" />
 		</div>
 	</div>
 
@@ -26,20 +30,16 @@
 		margin-bottom: 10px;
 		text-transform: uppercase;
 	}
-	.container2,
-	.title2 {
-		display: none;
+	.content-container,
+	.titel {
+		display: flex;
 	}
-	/* Standaard stijlen voor de afbeelding-container (niet weergegeven) */
-	.image-container {
-		display: none;
-	}
-
+    
 	/* HIER KOMT DE MEDIA QUERY'Z */
 
 	@media screen and (min-width: 525px) {
-		.container2,
-		.title2 {
+		.content-container,
+		.titel {
 			display: block;
 		}
 
@@ -48,7 +48,7 @@
 		}
 
 		/* met deze code maak ik de image Naast de beschrijving text */
-		.content-container {
+		.container {
 			display: flex;
 			border-radius: 10px;
 			overflow: hidden; /* Zorgt ervoor dat de afbeelding binnen de container blijft */
@@ -63,13 +63,13 @@
 			border-radius: 10px;
 		}
 
-		.container2 {
+		.content-container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 		}
 
-		.title2 {
+		.titel {
 			font-size: large;
 			padding: 10px;
 			text-align: center;
@@ -84,7 +84,7 @@
 		}
 	}
 	@media screen and (min-width: 525px) {
-		.content-container {
+		.container {
 			margin-top: none;
 		}
 	}
