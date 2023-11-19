@@ -8,7 +8,7 @@
         <h1 class="main-heading">Epipremnum pinnatum</h1>
       </div>
       <div class="image-container">
-        <img src={image} alt="Epipremnum pinnatum stekje" loading="lazy" class="main-image" style="max-width: 100%;" />
+        <img src={image} alt="Epipremnum pinnatum stekje" loading="lazy" class="main-image" style="max-width: 300px;" />
       </div>
     </div>
   
@@ -41,11 +41,18 @@
       transition: box-shadow 0.3s ease-in-out;
     }
   
-    .image-container img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    .image-container img {
+       border-radius: 10px;
+       max-width: 100%;
+       height: auto;
+    }
+
   
     .title {
       text-align: center;
@@ -71,7 +78,7 @@
     }
   
     .sub-heading {
-      color: #333467;
+      color: var(--sub-heading-color);
       margin-bottom: 10px;
       text-transform: uppercase;
     }
