@@ -24,8 +24,6 @@
         Bij dit proces komen geen afvalstoffen of schadelijke gassen vrij.      
       </p>
     </div>
-
-
   </div>
   
   <style> 
@@ -61,13 +59,8 @@
   
     .main-heading {
       font-size: 2rem;
-      color: #333;
     }
-  
-    .main-image {
-      transition: transform 0.3s ease-in-out;
-    }
-  
+
     .description {
       padding: 20px;
       text-align: center;
@@ -81,6 +74,7 @@
       color: var(--sub-heading-color);
       margin-bottom: 10px;
       text-transform: uppercase;
+;
     }
 
     /* Hover-effect voor container */
