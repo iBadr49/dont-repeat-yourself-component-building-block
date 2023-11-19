@@ -1,85 +1,119 @@
 <script>
-
-import image from "$lib/assets/scindapsus.jpg";
-
+    import image from "$lib/assets/scindapsus.jpg";
 </script>
+  
+  <div class="container">
+    <div class="content-container">
+      <div class="title">
+        <h1 class="main-heading">Epipremnum pinnatum</h1>
+      </div>
+      <div class="image-container">
+        <img src={image} alt="Epipremnum pinnatum stekje" loading="lazy" class="main-image" style="max-width: 100%;" />
+      </div>
+    </div>
+  
+    <div class="description">
+      <h2 class="sub-heading">Beschrijving</h2>
+      <p>
+        De Epipremnum pinnatum, ook wel Scindapsus Epipremnum genoemd, is een populaire hang- en klimplant. Zorg er voor dat de grond altijd lichtvochtig is, zonder dat er water onder in de pot blijft staan. 
+        Zet de plant op een plek zonder direct zonlicht. De Epipremnum komt van nature voor in het bosgebied in Zuidoost-Azië,
+        hier kunnen de bladeren wel 90cm groot worden. In deze bosgebieden groeit de Epipremnum, in de schaduw, als een klimplant langs de bomen omhoog. 
+        De Scindapsus komt voor in kleuren variërend van groen, geel en wit. De Scindapsus staat in de top-10 van de meest luchtzuiverende planten. 
+        De Scindapsus heeft huidmondjes in de bladeren, die schadelijke gassen opnemen en vervoeren door de stengel naar de wortels. 
+        Miljarden micro-organismen breken vervolgens deze schadelijke gassen af, die de plant vervolgens gebruikt als voeding.
+        Bij dit proces komen geen afvalstoffen of schadelijke gassen vrij.      
+      </p>
+    </div>
 
-<div class="container">
-	<div class="content-container">
-		<div class="titel">
-			<h1>Tradescantia zebrina ‘Vaderplant’
-            </h1>
-		</div>
-		<div class="image-container">
-                <img src={image} alt="stekje image" loading="lazy" max-width="00" />            
-		</div>
-	</div>
 
-	<div class="beschrijving">
-		<h2>Beschrijving</h2>
-		<p>Een van de makkelijkste planten om te verzorgen en stekken, groeit als kool (ook in de koudere maanden) en heeft prachtige paars-groene blaadjes met een glinstering.</p>
-	</div>
-</div>
-
-<style>
-
-.container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 4rem;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.titel {
-    font-size: large;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-.beschrijving {
-    padding: 20px;
-}
-
-.beschrijving h2 {
-    color: var(--color-primair);
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-/* Media Query voor schermen groter dan 768px */
-@media screen and (min-width: 768px) {
+  </div>
+  
+  <style> 
     .container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 2rem;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .main-heading {
+      font-size: 2rem;
+      color: #333;
+    }
+  
+    .main-image {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .description {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .description p{
+      line-height: 1.5;
+    }
+  
+    .sub-heading {
+      color: #333467;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    /* Hover-effect voor container */
+    .container:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  
+    /* Media Query voor schermen groter dan 768px */
+    @media screen and (min-width: 768px) {
+      .container {
         flex-direction: row;
-    }
-
-    .image-container {
+      }
+  
+      .image-container {
         margin-right: 20px;
+      }
+  
+      .description {
+        text-align: left;
+      }
     }
-}
-
-/* Media Query voor schermen groter dan 1024px */
-@media screen and (min-width: 1024px) {
-    .content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-    .image-container {
+  
+    /* Media Query voor schermen groter dan 1024px */
+    @media screen and (min-width: 1024px) {
+      .content-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .image-container {
         width: 300px;
-    }
-    .beschrijving {
-        max-width: 35rem;
-    }
-}
-</style>
+      }
+  
+      .description {
+        max-width: 45rem;
+        margin-left: 0px;
+      }
+    }  
+  </style>
+  
+  
