@@ -8,7 +8,7 @@
         <h1 class="main-heading">Epipremnum pinnatum</h1>
       </div>
       <div class="image-container">
-        <img src={image} alt="Epipremnum pinnatum stekje" loading="lazy" class="main-image" style="max-width: 300px;" />
+        <img src={image} alt="Epipremnum pinnatum stekje" loading="lazy" style="max-width: 300px;" />
       </div>
     </div>
   
@@ -50,7 +50,6 @@
        max-width: 100%;
        height: auto;
     }
-
   
     .title {
       text-align: center;
