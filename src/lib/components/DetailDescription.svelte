@@ -1,14 +1,14 @@
 <script>
     import image from "$lib/assets/scindapsus.jpg";
-    import { onMount } from 'svelte';
-    import { fade } from 'svelte/transition';
-    let isVisible = false;
+//     import { onMount } from 'svelte';
+//     import { fade } from 'svelte/transition';
+//     let isVisible = false;
    
-    onMount(() => {
-     setTimeout(() => {
-       isVisible = true;
-    }, 140);
-});
+//     onMount(() => {
+//      setTimeout(() => {
+//        isVisible = true;
+//     }, 140);
+// });
 </script>
   
   <div class="container">
@@ -23,7 +23,7 @@
   
     <div class="description" >
         <h2 class="sub-heading">Beschrijving</h2>
-      <p class="description-text" transition:fade={{ duration: 500 }} style="opacity: {isVisible ? 2 : 0}">
+      <p class="description-text"> 
         De Epipremnum pinnatum, ook wel Scindapsus Epipremnum genoemd, is een populaire hang- en klimplant. Zorg er voor dat de grond altijd lichtvochtig is, zonder dat er water onder in de pot blijft staan. 
         Zet de plant op een plek zonder direct zonlicht. De Epipremnum komt van nature voor in het bosgebied in Zuidoost-Azië,
         hier kunnen de bladeren wel 90cm groot worden. In deze bosgebieden groeit de Epipremnum, in de schaduw, als een klimplant langs de bomen omhoog. 
@@ -36,10 +36,10 @@
   </div>
   
   <style> 
-    .description-text {
+    /* .description-text {
       transition: opacity 0.2s ease-in-out;
       opacity: 0;  
-    }
+    } */
     .container {
       display: flex;
       flex-direction: column;
