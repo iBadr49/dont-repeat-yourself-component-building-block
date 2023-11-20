@@ -11,10 +11,10 @@
 // });
 </script>
   
-  <div class="container">
+<article class="container">
     <div class="content-container">
       <div class="title">
-        <h1 class="main-heading">Epipremnum pinnatum</h1>
+        <h1>Epipremnum pinnatum</h1>
       </div>
       <div class="image-container">
         <img src={image} alt="Epipremnum pinnatum stekje" loading="lazy" style="max-width: 300px;" />
@@ -23,7 +23,7 @@
   
     <div class="description" >
         <h2 class="sub-heading">Beschrijving</h2>
-      <p class="description-text"> 
+      <p> 
         De Epipremnum pinnatum, ook wel Scindapsus Epipremnum genoemd, is een populaire hang- en klimplant. Zorg er voor dat de grond altijd lichtvochtig is, zonder dat er water onder in de pot blijft staan. 
         Zet de plant op een plek zonder direct zonlicht. De Epipremnum komt van nature voor in het bosgebied in Zuidoost-Azië,
         hier kunnen de bladeren wel 90cm groot worden. In deze bosgebieden groeit de Epipremnum, in de schaduw, als een klimplant langs de bomen omhoog. 
@@ -33,13 +33,9 @@
         Bij dit proces komen geen afvalstoffen of schadelijke gassen vrij.      
       </p>
     </div>
-  </div>
+</article> 
   
   <style> 
-    /* .description-text {
-      transition: opacity 0.2s ease-in-out;
-      opacity: 0;  
-    } */
     .container {
       display: flex;
       flex-direction: column;
@@ -65,12 +61,9 @@
     }
   
     .title {
+        font-size: 1.5rem;
       text-align: center;
       margin-bottom: 10px;
-    }
-  
-    .main-heading {
-      font-size: 2rem;
     }
 
     .description {
@@ -86,8 +79,12 @@
       color: var(--sub-heading-color);
       margin-bottom: 10px;
       text-transform: uppercase;
-;
     }
+
+ /* .description-text {
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;  
+    } */
 
     /* Hover-effect voor container */
     .container:hover {
